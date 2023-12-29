@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/blog-preview-card-DmNG2VK_sk)
-- Live Site URL: [Add live site URL here](https://loquacious-kataifi-8215f7.netlify.app/)
+- Solution URL: (https://www.frontendmentor.io/solutions/blog-preview-card-DmNG2VK_sk)
+- Live Site URL: (https://loquacious-kataifi-8215f7.netlify.app/)
 
 ## My process
 
