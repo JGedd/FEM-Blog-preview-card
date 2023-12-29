@@ -23,12 +23,11 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Screenshot](./screenshot/desktop-screenshot.png)
-![Mobile Screenshot](./screenshot/mobile-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/blog-preview-card-DmNG2VK_sk)
+- Live Site URL: [Add live site URL here](https://loquacious-kataifi-8215f7.netlify.app/)
 
 ## My process
 
@@ -40,5 +39,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@JGedd](https://www.frontendmentor.io/profile/JGedd)
