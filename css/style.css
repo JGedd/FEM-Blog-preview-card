@@ -46,6 +46,7 @@ body {
   max-width: 38.4rem;
   background-color: var(--white);
   padding: 2.4rem;
+  border: 1px solid var(--black);
   border-radius: 2rem;
   box-shadow: 8px 8px #000000;
 }
@@ -59,25 +60,25 @@ body {
   margin: var(--spacing-m) 0;
 }
 
-.card-content h2,
-h3 {
+.card-content h1,
+h2 {
   line-height: 1.5;
   color: var(--black);
 }
 
-.card-content h2 {
+.card-content h1 {
   font-size: 2.4rem;
   font-weight: var(--extra-bold);
   margin-bottom: var(--spacing-s);
   transition: ease 0.4s;
 }
 
-.card-content h2:hover {
+.card-content h1:hover {
   cursor: pointer;
   color: var(--yellow);
 }
 
-.card-content h3 {
+.card-content h2 {
   font-size: 1.4rem;
   font-weight: var(--medium);
   margin-bottom: var(--spacing-s);
@@ -133,11 +134,11 @@ h3 {
     width: 100%;
   }
 
-  .card-content h2 {
+  .card-content h1 {
     font-size: 2rem;
   }
 
-  .card-content h3 {
+  .card-content h2 {
     font-size: 1.2rem;
   }
 
