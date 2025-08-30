@@ -1,0 +1,213 @@
+@layer reset, base, components;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+
+  /* https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
+  [role='list'] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-block-size: 100vh;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture {
+    max-inline-size: 100%;
+    display: block;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+@layer base {
+  :root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-gray-500: hsl(0, 0%, 42%);
+    --clr-gray-950: hsl(0, 0%, 7%);
+
+    --ff-figtree: 'Figtree', sans-serif;
+
+    --fs-300: 0.75rem;
+    --fs-400: 0.875rem;
+    --fs-500: 1rem;
+    --fs-600: 1.2rem;
+    --fs-700: 1.5rem;
+
+    --text-main: var(--clr-gray-500);
+    --text-heading: var(--clr-gray-950);
+
+    --font-size-sm: var(--fs-300);
+    --font-size-md: var(--fs-400);
+    --font-size-regular: var(--fs-500);
+
+    --font-size-heading-sm: var(--fs-600);
+    --font-size-heading-regular: var(--fs-700);
+
+    --border-radius-1: 0.25rem;
+    --border-radius-2: 0.625rem;
+    --border-radius-3: 1.25rem;
+  }
+
+  html {
+    font-family: var(--ff-figtree);
+    line-height: 1.5;
+  }
+
+  body {
+    font-size: var(--font-size-regular);
+    color: var(--clr-gray-500);
+    background-color: var(--clr-yellow);
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (width < 760px) {
+      font-size: var(--font-size-md);
+    }
+  }
+
+  h1,
+  h2 {
+    font-weight: 800;
+    color: var(--clr-gray-950);
+    margin-bottom: 0.75rem;
+  }
+}
+
+@layer components {
+  .card {
+    max-width: 327px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius-3);
+    box-shadow: 8px 8px #000000;
+
+    @media (width > 760px) {
+      max-width: 384px;
+    }
+  }
+
+  .card__img {
+    width: 100%;
+    border-radius: var(--border-radius-2);
+  }
+
+  .card__label {
+    display: inline-block;
+    font-size: var(--font-size-sm);
+    font-weight: 800;
+    background-color: var(--clr-yellow);
+    color: var(--clr-gray-950);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--border-radius-1);
+    margin-bottom: 0.75rem;
+
+    @media (width > 760px) {
+      font-size: var(--font-size-md);
+    }
+  }
+
+  .card__date {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+
+    @media (width > 760px) {
+      font-size: var(--font-size-md);
+    }
+  }
+
+  .card__title {
+    font-size: var(--font-size-heading-sm);
+    font-weight: 800;
+    transition: ease 0.4s;
+
+    @media (width > 760px) {
+      font-size: var(--font-size-heading-regular);
+    }
+  }
+
+  .card__title:hover,
+  .card__title:focus {
+    cursor: pointer;
+    color: var(--clr-yellow);
+  }
+
+  .card__author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .card__author__img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  .card__author__title {
+    font-size: var(--font-size-md);
+    font-weight: 800;
+    color: var(--clr-gray-950);
+  }
+}
